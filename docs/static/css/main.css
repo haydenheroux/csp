@@ -22,16 +22,21 @@
 	--text-pad: 4px;
 	--text-margin: calc(2 * var(--text-pad));
 
+	--tag-thickness: 1;
+
 	--base-font-size: 1em;
-	--tag-font-size: calc(var(--base-font-size) - var(--text-pad));
+	--tag-font-size: calc(var(--base-font-size) - var(--tag-thickness) * var(--text-pad));
 
 	--font-family-monospace: monospace;
 	--font-family-sans-serif: sans-serif;
 }
 
 span.tag {
+	display: inline-block;
+	/* FIXME want to use calc(-0.5 * var(--text-pad)) here but cannot */
+	transform: translate(0, -2px);
 	background-color: var(--black);
-	color: var(--white);
+	color: var(--black);
 	text-shadow: 0 0 var(--text-pad) var(--white);
 	font-size: var(--tag-font-size);
 	font-family: var(--font-family-monospace);
@@ -49,5 +54,86 @@ span.python::before {
 
 span.python {
 	background: linear-gradient(to right, var(--python-blue) 50%, var(--python-yellow) 0%);
-	color: var(--dark);
+	color: var(--black);
+}
+
+span.computing::before {
+	content: "Computing";
+}
+
+span.computing {
+	background-color: var(--red);
+}
+
+span.algorithm::before {
+	content: "Algorithm";
+}
+
+span.algorithm {
+	background-color: var(--orange);
+}
+
+span.internet::before {
+	content: "Internet";
+}
+
+span.internet {
+	background-color: var(--yellow);
+}
+
+
+span.simulation::before {
+	content: "Simulation";
+}
+
+span.simulation {
+	background-color: var(--brown);
+}
+
+span.impacts_of_computing::before {
+	content: "Impacts of Computing";
+}
+
+span.impacts_of_computing {
+	background-color: var(--purple);
+}
+
+span.ap_create_task::before {
+	content: "AP Create Performance Task";
+}
+
+span.ap_create_task {
+	background-color: var(--pink);
+}
+
+span.pltw_eoc_exam::before {
+	content: "PLTW EOC Exam";
+}
+
+span.pltw_eoc_exam {
+	background-color: var(--green);
+}
+
+span.concept::before {
+	content: "Concept";
+}
+
+span.concept {
+	background-color: var(--pale-blue);
+}
+
+span.vocabulary::before {
+	content: "Vocabulary";
+}
+
+span.vocabulary {
+	background-color: var(--light-blue);
+}
+
+span.example::before {
+	content: "Example";
+}
+
+span.example {
+	background-color: var(--dark-blue);
 }
