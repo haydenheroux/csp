@@ -1,0 +1,17 @@
+:root {
+	/* text colors (monochrome) */
+	--white: #f9f9f9;
+	--dark: #383a42;
+
+	/* highlight colors */
+	--red: #d52753;
+	--brown: #a05a48;
+	--orange: #df631c;
+	--yellow: #c5a332;
+	--green: #23974a;
+	--light-blue: #0098dd;
+	--pale-blue: #7a82da;
+	--dark-blue: #275fe4;
+	--purple: #823ff1;
+	--pink: #ce33c0;
+}
