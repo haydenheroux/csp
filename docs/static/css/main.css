@@ -32,7 +32,7 @@
 span.tag {
 	background-color: var(--black);
 	color: var(--white);
-	text-shadow: 1px 1px var(--text-pad) var(--white);
+	text-shadow: 0 0 var(--text-pad) var(--white);
 	font-size: var(--tag-font-size);
 	font-family: var(--font-family-monospace);
 	font-weight: bold;
