@@ -7,3 +7,7 @@ TODO: use screenshots to show GitHub download process
 ## Contributing
 
 Contact the original author for information about how to contribute.
+
+## Credits
+
+ - [freecodecamp.org](https://www.freecodecamp.org/news/basic-html5-template-boilerplate-code-example/) for their no-frills HTML5 boilerplate
