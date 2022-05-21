@@ -1,7 +1,7 @@
 :root {
 	/* text colors (monochrome) */
 	--white: #f9f9f9;
-	--dark: #383a42;
+	--black: #383a42;
 
 	/* highlight colors */
 	--red: #d52753;
@@ -14,4 +14,40 @@
 	--dark-blue: #275fe4;
 	--purple: #823ff1;
 	--pink: #ce33c0;
+
+	/* python colors */
+	--python-blue: #3475a8;
+	--python-yellow: #ffd340;
+
+	--text-pad: 4px;
+	--text-margin: calc(2 * var(--text-pad));
+
+	--base-font-size: 1em;
+	--tag-font-size: calc(var(--base-font-size) - var(--text-pad));
+
+	--font-family-monospace: monospace;
+	--font-family-sans-serif: sans-serif;
+}
+
+span.tag {
+	background-color: var(--black);
+	color: var(--white);
+	text-shadow: 1px 1px var(--text-pad) var(--white);
+	font-size: var(--tag-font-size);
+	font-family: var(--font-family-monospace);
+	font-weight: bold;
+	margin: 0;
+	margin-left: var(--text-margin);
+	margin-right: var(--text-margin);
+	padding: var(--text-pad);
+	border-radius: 2px;
+}
+
+span.python::before {
+	content: "Python"
+}
+
+span.python {
+	background: linear-gradient(to right, var(--python-blue) 50%, var(--python-yellow) 0%);
+	color: var(--dark);
 }
