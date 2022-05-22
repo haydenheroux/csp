@@ -31,6 +31,12 @@
 	--font-family-sans-serif: sans-serif;
 }
 
+html {
+	background-color: var(--white);
+	color: var(--black);
+	font-family: var(--font-family-sans-serif);
+}
+
 span.tag {
 	display: inline-block;
 	/* FIXME want to use calc(-0.5 * var(--text-pad)) here but cannot */
