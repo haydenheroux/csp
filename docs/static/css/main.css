@@ -36,8 +36,8 @@ span.tag {
 	/* FIXME want to use calc(-0.5 * var(--text-pad)) here but cannot */
 	transform: translate(0, -2px);
 	background-color: var(--black);
-	color: var(--black);
-	text-shadow: 0 0 var(--text-pad) var(--white);
+	color: var(--white);
+	text-shadow: 0 0 var(--text-pad) var(--black);
 	font-size: var(--tag-font-size);
 	font-family: var(--font-family-monospace);
 	font-weight: bold;
@@ -54,7 +54,6 @@ span.python::before {
 
 span.python {
 	background: linear-gradient(to right, var(--python-blue) 50%, var(--python-yellow) 0%);
-	color: var(--black);
 }
 
 span.computing::before {
