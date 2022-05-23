@@ -22,7 +22,7 @@
 	--text-pad: 4px;
 	--text-margin: calc(2 * var(--text-pad));
 
-	--block-pad: 1vw;
+	--block-pad: 0.5vw;
 	--block-margin: calc(2 * var(--block-pad));
 
 	--tag-thickness: 1;
@@ -32,6 +32,8 @@
 
 	--font-family-monospace: monospace;
 	--font-family-sans-serif: sans-serif;
+
+	--nav-width: min(20%, 200px);
 }
 
 * {
@@ -47,27 +49,23 @@ html, body {
 }
 
 #nav {
-	float: left;
-	width: 20%;
 	height: 100%;
-	padding: var(--block-pad);
-	margin-right: var(--block-margin);
-}
-
-#nav * {
-	float: none;
-	display: block;
-	text-align: left;
-	width: 100%;
+	width: var(--nav-width);
+	position: absolute;
+	left: 0;
+	top: 0;
+	margin: var(--block-margin);
 }
 
 #nav input[type=text] {
-	float: right;
+	width: 100%;
 }
 
 main {
-	width: 80%;
-	float: none;
-	padding: var(--block-pad);
-	margin: var(--block-margin);
+	margin-left: calc(var(--nav-width) + 3 * var(--block-margin));
+	padding: var(--block-padding);
+}
+
+main ul {
+	margin-left: calc(2 * var(--text-margin));
 }
