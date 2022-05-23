@@ -34,6 +34,11 @@
 	--font-family-sans-serif: sans-serif;
 }
 
+* {
+	margin: 0;
+	padding: 0;
+}
+
 html, body {
 	background-color: var(--white);
 	color: var(--black);
@@ -65,110 +70,4 @@ main {
 	float: none;
 	padding: var(--block-pad);
 	margin: var(--block-margin);
-}
-
-span.tag {
-	display: inline-block;
-	/* FIXME want to use calc(-0.5 * var(--text-pad)) here but cannot */
-	transform: translate(0, -2px);
-	background-color: var(--black);
-	color: var(--white);
-	text-shadow: 0 0 calc(0.5 * var(--text-pad)) var(--black);
-	font-size: var(--tag-font-size);
-	font-family: var(--font-family-monospace);
-	font-weight: bold;
-	margin: 0;
-	margin-left: var(--text-margin);
-	margin-right: var(--text-margin);
-	padding: var(--text-pad);
-	border-radius: 2px;
-}
-
-span.python::before {
-	content: "Python"
-}
-
-span.python {
-	background: linear-gradient(to right, var(--python-blue) 50%, var(--python-yellow) 0%);
-}
-
-span.computing::before {
-	content: "Computing";
-}
-
-span.computing {
-	background-color: var(--red);
-}
-
-span.algorithm::before {
-	content: "Algorithm";
-}
-
-span.algorithm {
-	background-color: var(--orange);
-}
-
-span.internet::before {
-	content: "Internet";
-}
-
-span.internet {
-	background-color: var(--yellow);
-}
-
-
-span.simulation::before {
-	content: "Simulation";
-}
-
-span.simulation {
-	background-color: var(--brown);
-}
-
-span.impacts_of_computing::before {
-	content: "Impacts of Computing";
-}
-
-span.impacts_of_computing {
-	background-color: var(--purple);
-}
-
-span.ap_create_task::before {
-	content: "AP Create Performance Task";
-}
-
-span.ap_create_task {
-	background-color: var(--pink);
-}
-
-span.pltw_eoc_exam::before {
-	content: "PLTW EOC Exam";
-}
-
-span.pltw_eoc_exam {
-	background-color: var(--green);
-}
-
-span.concept::before {
-	content: "Concept";
-}
-
-span.concept {
-	background-color: var(--pale-blue);
-}
-
-span.vocabulary::before {
-	content: "Vocabulary";
-}
-
-span.vocabulary {
-	background-color: var(--light-blue);
-}
-
-span.example::before {
-	content: "Example";
-}
-
-span.example {
-	background-color: var(--dark-blue);
 }
