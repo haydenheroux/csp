@@ -22,6 +22,9 @@
 	--text-pad: 4px;
 	--text-margin: calc(2 * var(--text-pad));
 
+	--block-pad: 1vw;
+	--block-margin: calc(2 * var(--block-pad));
+
 	--tag-thickness: 1;
 
 	--base-font-size: 1em;
@@ -31,10 +34,37 @@
 	--font-family-sans-serif: sans-serif;
 }
 
-html {
+html, body {
 	background-color: var(--white);
 	color: var(--black);
 	font-family: var(--font-family-sans-serif);
+	height: 100%;
+}
+
+#nav {
+	float: left;
+	width: 20%;
+	height: 100%;
+	padding: var(--block-pad);
+	margin-right: var(--block-margin);
+}
+
+#nav * {
+	float: none;
+	display: block;
+	text-align: left;
+	width: 100%;
+}
+
+#nav input[type=text] {
+	float: right;
+}
+
+main {
+	width: 80%;
+	float: none;
+	padding: var(--block-pad);
+	margin: var(--block-margin);
 }
 
 span.tag {
@@ -43,7 +73,7 @@ span.tag {
 	transform: translate(0, -2px);
 	background-color: var(--black);
 	color: var(--white);
-	text-shadow: 0 0 var(--text-pad) var(--black);
+	text-shadow: 0 0 calc(0.5 * var(--text-pad)) var(--black);
 	font-size: var(--tag-font-size);
 	font-family: var(--font-family-monospace);
 	font-weight: bold;
